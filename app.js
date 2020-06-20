@@ -29,7 +29,7 @@ passport.deserializeUser(User.deserializeUser());
 app.get("/",function(req,res){
   res.render("home");
 });
-
+//isLoggedIn function check user is loginn or not
 app.get("/secret",isLoggedIn,function(req,res){
   res.render("secret");
 });
